@@ -11,8 +11,8 @@
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
+          center: new google.maps.LatLng(45.513459, -122.681705),
+          zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -43,7 +43,7 @@
 				</nav>
 			</div>
 		</div>
-		<div id="bg-image" id="home">
+		<div id="home">
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-1 center-block">
@@ -69,13 +69,15 @@
 
 <section class="wrapper" id="products">
 	<div class="row">
-		<header class="col-2-3 center-block">
-			<h2>Products</h2>
+		<div class="col-2-3 center-block">
+			<header>
+				<h2>Products</h2>
+			</header>
 			<blockquote>
 				“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” 
 				<footer><a href="#">- Coffee Review</a></footer>
 			</blockquote>
-		</header>
+		</div>
 	</div>
 
 	<div class="row">
@@ -92,7 +94,7 @@
 
 	<div class="row">
 		<div class="col-1-3 center-block">
-			<p >Learn <a href="#">how to brew!</a></p>
+			<p >Learn <a href="http://www.howtobrew.com/" target="_blank">how to brew!</a></p>
 		</div>
 	</div>
 
@@ -106,7 +108,7 @@
 				<header>
 					<h3>Finch House Blend</h3>
 				</header>
-				<p><span>Medium Roast</span><br/><span>Imported from Cajamarca &amp; Moyobamba Regions, Peru.</span><br/><span>complemented by flavors of dark chocolate, peanut and light pepper notes.</span><br/><span>Our house blend was rated a 98 by coffeereview.com!</span></p>
+				<p><span>Medium Roast</span><br/><span>Imported from Cajamarca &amp; Moyobamba Regions, Peru.</span><br/><span>complemented by flavors of dark chocolate, peanut and light pepper notes.</span><br/><span>Our house blend was rated a 98 by <a href="http://www.coffeereview.com/" target="_blank">coffeereview.com!</a></span></p>
 				</div>
 				<div class="col-2-9">
 					<p>$17.95</p>
@@ -187,12 +189,13 @@
 	</div>
 	<div class="row">
 		<div class="col-1-2 center-block">
-		<p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated.</p>
-		<p> Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
-		<div class="row">
-			<div class="col-3-4 center-block">
-				<a href="#products" class="button">Buy Now</a>
-				<a href="#contact" class="button">Contact Us</a>
+			<p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated.</p>
+			<p> Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
+			<div class="row">
+				<div class="col-3-4 center-block">
+					<a href="#products" class="button">Buy Now</a>
+					<a href="#contact" class="button">Contact Us</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -228,9 +231,9 @@
 		<header class="col-3-8 center-block">
 			<h2>Contact Us</h2>
 			<ul>
-				<li><a href="https://www.facebook.com" class="facebook"></a></li>
-				<li><a href="https://www.twitter.com" class="twitter"></a></li>
-				<li><a href="https://plus.google.com" class="google"></a></li>
+				<li><a href="https://www.facebook.com" class="facebook" target="_blank"><p>facebook</p></a></li>
+				<li><a href="https://www.twitter.com" class="twitter" target="_blank"><p>twitter</p></a></li>
+				<li><a href="https://plus.google.com" class="google" target="_blank"><p>google plus</p></a></li>
 			</ul>
 		</header>
 	</div>
@@ -256,10 +259,10 @@
 <footer class="wrapper">
 	<div class="row">
 		<div class="col-1-4">
-			<a href="#bg-image"><img src="img/footer-logo.png" alt="Twin Finch"></a>
+			<a href="#home"><img src="img/footer-logo.png" alt="Twin Finch"></a>
 		</div>
 		<ul class="col-1-12">
-			<li><a href="#bg-image">Home</a></li>
+			<li><a href="#home">Home</a></li>
 			<li><a href="#about">Process</a></li>
 			<li><a href="#products">Products</a></li>
 			<li><a href="#subscribe">Subscribe</a></li>
@@ -269,9 +272,9 @@
 		<div class="col-1-6">
 			<p>Connect With Us</p>
 			<ul>
-				<li><a href="https://www.facebook.com" class="facebook"></a></li>
-				<li><a href="https://www.twitter.com" class="twitter"></a></li>
-				<li><a href="https://plus.google.com" class="google"></a></li>
+				<li><a href="https://www.facebook.com" class="facebook" target="_blank"><p>facebook</p></a></li>
+				<li><a href="https://www.twitter.com" class="twitter" target="_blank"><p>twitter</p></a></li>
+				<li><a href="https://plus.google.com" class="google" target="_blank"><p>google plus</p></a></li>
 			</ul>
 		</div>
 	</div>
