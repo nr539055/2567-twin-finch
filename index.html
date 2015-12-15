@@ -1,751 +1,284 @@
-@charset "utf-8";
-/* CSS Document */
-
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 - Typography
-	1.1 - Headings
-	1.2 - Body Copy
-	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
-2.0 - Navigation Menus
-	2.1 - Main Menu
-	2.2 - Footer Menu
-3.0 - Content
-	3.1 - Site Structure
-	3.2 - columns
-4.0 - Media
-5.0 - Utility
-	5.1 - Background Colors
-	5.2 - Text Utility
-	5.3 - Spacing
-	5.4 - Alignments
---------------------------------------------------------------*/
-
-/*=======================
-
-	1.0 - TYPOGRAPHY
-
-=======================*/
-
-body {
-	font-family: "Open Sans", sans-serif;
-}
-
-
-
-/*=======================
-	1.1 - HEADINGS
-=======================*/
-
-h1, h2, h3, h4, .col-2-9, .col-1-3:nth-child(4), .col-1-3 p:nth-child(4) {
-	font-family: "Roboto Slab", serif;
-}
-
-h1, h3, h4, .col-1-2 span:first-child, .col-1-2 p span:nth-child(7), .col-1-3 span:first-child, footer ul li a, footer p, section#subscribe header p, nav ul li {
-	font-weight: 700;
-}
-
-h1 {
-	font-size: 5.625rem;
-}
-
-h2 {
-	font-size: 4.875rem;
-}
-
-h3, .col-2-9, .col-1-3:nth-child(4), .col-1-3 p:nth-child(4) {
-	font-size: 1.875rem;
-}
-
-h4, .button {
-	font-size: 1.75rem;
-}
-
-
-
-/*=======================
-	1.2 - BODY COPY
-=======================*/
-
-.col-2-3 p {
-	color: #EAD5AA;
-}
-
-.col-2-3 p, blockquote {
-	font-size: 1.5rem;
-}
-
-blockquote, .col-1-2 p span:nth-child(3), .col-1-3 span:nth-child(3) {
-	font-style: italic;
-}
-
-blockquote footer {
-	display:inline-block;
-}
-
-blockquote footer a {
-	font-style: normal;
-}
-
-#products div:nth-child(2) .col-1-3 p, #about .col-1-2 p, blockquote footer a, .col-1-3 span:first-child, section#contact .col-1-3 p  {
-	font-size: 1.125rem;
-}
-
-section#products div:nth-child(3) p {
-	font-size: 2rem;
-}
-
-.col-1-2 span:first-child, nav ul li, .button { 
-	font-size: 1.25rem;
-}
-
-.col-1-2 p span:nth-child(5) {
-	font-size: 1.375rem;
-}
-
-.col-1-2 p span:nth-child(7), .col-1-3 span:first-child{
-	font-size: 1.1rem;
-}
-
-.col-1-3 span:nth-child(3){
-	font-size: .75rem;
-}
-
-
-
-/*=======================
-	1.3 - BUTTONS
-=======================*/
-
-a {
-	text-decoration: none;
-}
-
-#products p a:hover, nav ul li a, body {
-	color: #462D19;
-}
-
-.button {
-	padding:14px 20px;
-	background-color: #C98D48;
-	color: white;
-	font-weight: 300;
-}
-
-.button, form input, textarea {
-	border-radius: 12px;
-}
-
-.button:hover {
-	background-color: #462D19;
-}
-
-#products p a{
-	padding:0;
-	background-color: transparent;
-}
-
-section#contact form .col-1-3 {
-	margin-top: 30px;
-}
-
-
-/*=======================
-	1.4 - FORMS
-=======================*/
-
-#subscribe form input, #contact form input {
-	height:50px;
-}
-
-label, ul li p {
-	display: none;
-}
-
-input, textarea {
-	background-color: #EAD5AA;
-}
-
-::-webkit-input-placeholder{
-	color: #AB5429;
-	font: 700 1.25rem "roboto slab", serif;
-	padding-left: 5px;
-}
-
-:-moz-placeholder /* Firefox 18- */ {
-	color: #AB5429;
-	font: 700 1.25rem "roboto slab", serif;
-	padding-left: 5px;
-}
-
-::-moz-placeholder /* Firefox 19+ */ {
- 	color: #AB5429;
- 	font: 700 1.25rem "roboto slab", serif;
- 	padding-left: 5px;
-}
-
-:-ms-input-placeholder {
-  	color: #AB5429;
-  	font: 700 1.25rem "roboto slab", serif;
-  	padding-left: 5px;
-}
-
-form {
-	margin-left: 125px;
-}
-
-/*=======================
-	1.5 - LISTS
-=======================*/
-
-#contact ul li a, figure, .facebook, .twitter, .google {
-	display: block;
-}
-
-#contact ul li, footer ul li {
-	list-style-type: none;
-}
-
-
-
-/*=============================
-
-	2.0 - NAVIGATION MENUS
-
-===============================*/
-
-/*=======================
-	2.1 MAIN MENU
-=======================*/
-
-nav ul li {
-	vertical-align: middle;
-	margin-left: 20px;
-}
-
-nav ul li, section#contact ul li, footer .col-1-6 ul li {
-	display: inline-block;
-}
-
-nav ul li a:hover {
-	text-decoration: underline;
-}
-
-nav ul li:first-child{
-	margin-left: 0;
-}
-
-section#subscribe header p, nav ul li {
-	font-size: 1.45rem;
-}
-
-
-
-/*=======================
-	2.2 - FOOTER MENU
-=======================*/
-
-footer ul li a, footer p, section#subscribe header p, nav ul li, .col-1-3 span:last-child, .col-1-2 p span:nth-child(3){
-	font-size: 1rem;
-	color:#462D19;
-}
-
-footer ul li a:hover {
-	color:#AB5429;
-}
-
-
-
-/*==========================
-
-	3.0 - CONTENT
-
-===========================*/
-
-/*==========================
-	3.1 - SITE STRUCTURE
-===========================*/
-
-*, *:after, *:before {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
-
-.wrapper {
-	width: 80%;/*original width=1160px*/
-}
-
-.row:after {
-	content:"";
-	display: table;
-	clear: both;
-}
-
-img{
-	max-width: 100%;
-}
-
-figure {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-}
-
-[class*="col-"] {
-	float: left;
-	padding:0 20px 20px 0;
-	text-align: center;
-}
-
-[class*="col-"]:last-of-type {
-	padding-right: 0px;
-}
-
-
-
-/*==========================
-	3.2 - COLUMNS
-===========================*/	
-
-.col-1, textarea, #subscribe form input, #contact form input{
-	width: 100%;
-}
-
-.col-1-2 {
-	width: 50%;
-}
-
-.col-1-3 {
-	width: 33.33%;
-}
-
-.col-2-3 {
-	width: 66.66%;
-}
-
-.col-1-4 {
-	width:25%;
-}
-
-.col-3-4 {
-	width: 75%;
-}
-
-.col-1-5 {
-	width: 20%;
-}
-
-.col-2-5 {
-	width: 40%;
-}
-
-.col-3-5 {
-	width: 60%;
-}
-
-.col-4-5 {
-	width: 80%;
-}
-
-.col-1-6 {
-	width: 16.66%;
-}
-
-.col-5-6 {
-	width: 83.33%;
-}
-
-.col-1-7 {
-	width: 14.285%;
-}
-
-.col-3-7{
-	width:42.85%;
-}
-
-.col-4-7{
-	width:57.14%;
-}
-
-.col-1-8{
-	width: 12.5%;
-}
-
-.col-3-8{
-	width: 37.5%;
-}
-
-.col-1-9{
-	width: 11.11%;
-}
-
-.col-5-9 {
-	width:55.55%;
-}
-
-.col-2-9 {
-	width: 22.22%;
-}
-
-.col-1-10{
-	width: 10%;
-}
-
-.col-1-11{
-	width: 9.0909%;
-}
-
-.col-4-11{
-	width: 36.36%;
-}
-
-.col-5-11{
-	width: 45.45%;
-}
-
-.col-2-11{
-	width: 18.18%;
-}
-
-.col-1-12{
-	width: 8.33%;
-}
-
-.col-11-12 {
-	width: 91.66%;
-}
-
-.col-8-12 {
-	width: 72%;
-}
-
-
-
-/*=======================
-
-	4.0 - Media
-
-=======================*/
-
-#map {
-	height:287px;
-}
-
-#map, form {
-	margin-top: 40px;
-}
-
-#home {
-	background: url(../img/hero.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
-	padding:2.5rem 0 5rem 0;
-}
-
-.facebook {
-	background:url(../img/facebook.png) no-repeat;
-}
-
-.twitter {
-	background:url(../img/twitter.png) no-repeat;
-}
-
-.google {
-	background: url(../img/google-plus.png) no-repeat;
-}
-
-section#contact ul, footer ul, nav ul {
-	padding-left: 0;
-}
-
-section#contact ul li, footer .col-1-6 ul li {
-	height: 38px;
-	width: 38px;
-	background-position: 0,0;
-}
-
-.facebook, .twitter, .google {
-	height: 100%;
-}
-
-.facebook:hover, .twitter:hover, .google:hover {
-	background-position:0 -38px;
-}
-
-
-
-/*=======================
-	
-	5.0 - UTILITY
-
-=======================*/
-
-/*============================
-	5.1 - BACKGROUND COLORS
-==============================*/
-
-h1, blockquote footer a, #products p a {
-	color: #C98D48;
-}
-
-h2, h3, h4, blockquote footer a:hover, nav ul li a:hover {
-	color: #AB5429;
-}
-
-/*=======================
-	5.3 - SPACING
-=========================*/
-
-header .col-1-3 a.button:last-child, section#about a.button:last-child {
-	margin-left: 97px;
-}
-
-.col-2-9 {
-	margin-top:27px;
-}
-
-h1, h2, h3, h4 {
-	margin-bottom: 0;
-}
-
-h2, section#subscribe form {
-	margin-top: 150px;
-}
-
-blockquote{
-	margin-top: 11px;
-}
-
-section#products .col-1-2 p, section#products .col-1-3 p:nth-child(3) {
-	margin-top: 0;
-}
-
-.col-2-9 p{
-	margin-bottom: 10px;
-}
-
-section#about h2{
-	margin-top: 200px;
-}
-
-section#products .col-1-3 p:nth-child(4), form input {
- 	margin-bottom: 20px;
- }
-
- section#subscribe{
- 	padding-top: 100px;
- }
-
- section#subscribe h2 {
- 	margin-top: -20px;
- }
-
- section#subscribe p {
- 	margin-top: -10px;
- }
-
- section#subscribe header, section#subscribe form .col-1-3 {
- 	margin-right: 120px;
- }
-
- section#contact .col-1-3:first-child {
- 	margin-left: 120px;
- }
-
- section#contact{
- 	margin-bottom: 100px;
- }
-
- section#about .col-1-2 p:nth-child(2) {
- 	padding-bottom: 50px;
- }
-
-section#contact h2 {
-	margin-bottom: 30px;
-	margin-top: 250px;
-}
-
-#products section.col-1-3 figure {
-	margin-bottom: -50px;
-}
-
-
-
-/*=======================
-	5.4 - ALIGNMENTS
-=======================*/
-
-.center-block {
-	float:none;
-}
-
-.center-block, .wrapper {
-	margin:0 auto;
-}
-
-#products .col-1-2, footer .col-1-12 {
-	text-align: left;
-}
-
-#pad-top {
-	padding-top: 55px;
-}
-
-footer .col-1-12 {
-	margin-left: 25%;
-}
-
-footer .col-1-6, section#contact form .col-1-3 {
-	float: right;
-}
-
-
-
-/*=======================
-		media
-=======================*/
-
-@media screen and (max-width: 768px) {
-	.wrapper {
-		width: 99%;
-	}
-
-	/*======================
-
-		Alignment
-
-	========================*/
-
-	footer .col-1-6, section#subscribe form .col-1-3, section#subscribe .col-1-6, .col-2-9 {
-		float: none;
-	}
-
-	#products .col-1-2, nav ul {
-		text-align: center;
-	}
-
-	footer .col-1-6, form .col-1-6, #submit a.button {
-		float: right;
-	}
-
-	 ul.col-1-12 li {
-	 	float: left;
-	}
-
-	header .col-1-3 a.button, section#about a.button, header .col-1-3 a.button:last-child, section#about a.button:last-child, #product section.col-3-4 a.button {
-		display: block;
-	}
-
-	/*======================
-
-			Spacing
-
-	========================*/
-
-	section#subscribe form .col-1-3 {
-		margin-right: 0;
-	}
-
-	footer ul.col-1-12 {
-		margin-left: 20px;
-	}
-
-	footer .col-1-6, ul.col-1-12 li:nth-child(3) {
-		margin-right: 20px;
-	}
-
-	ul.col-1-12 li:first-child {
-	 	margin-right:43px;
-	}
-
-	ul.col-1-12 li:nth-child(5){
-	 	margin-right: 28px;
-	}
-
-	section#contact .col-1-3:first-child, section#contact .col-1-3, section#subscribe form, footer ul.col-1-12, nav ul li:nth-child(4), nav ul li:nth-child(5), #product section.col-3-4 a.button {
-		margin-left: 0;
-	}
-
-	h1 {
-		font-size: 5rem;
-	}
-
-	h3 {
-		margin-top: 0;
-	}
-
-	nav ul li{
-		margin-bottom: 20px;
-	}
-
-	#products section.col-1-3{
-		margin-top: 100px;
-	}
-
-	header .col-1-3 a.button, section#about .col-3-4 a.button:nth-child(2), #home .col-1-3 a:last-child, section#about a.button:last-child {
-		margin-top: 35px;
-	}
-
-	#product section.col-3-4 a.button, section#subscribe .col-1-6, .col-2-9, header .col-1-3 a.button, section#about a.button, header .col-1-3 a.button:last-child, section#about a.button:last-child {
-		margin:0 auto;
-	}
-
-	/*======================
-
-		Width
-
-	========================*/
-
-	.col-1-3, .col-2-3, nav ul li:nth-child(4), .col-8-12, .col-2-4, .col-1-2+.col-1-4, .row:last-child .col-1-4:last-child, header.col-3-8, section#subscribe form .col-1-3, .col-1-4, .col-1-2, .col-3-4{
-		width: 100%;
-	}
-
-	.col-1-7:last-child {
-		width: 50%;
-	}
-
-	.button {
-		width: 43%;
-	}
-
-	.col-1-8, .col-1-7, .col-1-11, .col-1-6+.col-1-3{
-		width: 25%;
-	}
-
-	.col-2-9, form .col-1-6 {
-		width:43%;
-	}
-
-	ul.col-1-12 {
-		width: 41%;
-	}
-
-	.row:nth-child(14) .col-1-4, .col-3-8, .col-1-9, .col-1-11:nth-child(9), .col-1-11:nth-child(10), .col-1-11:last-child, .col-1-6{
-		width:33.33%;
-	}
-
-	.col-1-10{
-		width: 20%;
-	}
-
-	.col-1-12{
-		width: 16.66%
-	}
-
-	.col-1-6+.col-1-3{
-		width: 33.32%;
-	}
-
-	.col-1-4:nth-child(2), .col-1-3, .col-2-3, .col-1-4+.col-1-2, .col-1-8:nth-child(4), .col-1-7:nth-child(4), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(5), .col-1-11:nth-child(4), .col-1-11:nth-child(8), .col-1-12:nth-child(6), footer .col-1-4 {
-		padding-right: 0;
-	}
-}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans:400,300,400italic,700" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(45.513459, -122.681705),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<title>untitled</title>
+</head>
+
+<body>
+
+
+<!-- ===========HERO & NAV=============== -->
+
+	<header>
+		<div class="wrapper">
+			<div class="row">
+				<nav class="col-8-12 center-block">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">Process</a></li>
+						<li><a href="#products">Products</a></li>
+						<li><a href="#"><img src="img/nav-logo.jpg" alt="Twin Finch Logo"/></a></li>
+						<li><a href="#subscribe">Subscribe</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#contact">Find Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="home">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-1 center-block">
+						<h1>Twin Finch Roastery</h1>
+						<div class="row">
+							<div class="col-2-3 center-block">
+								<p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1-3 center-block">
+						<a href="#products" class="button">Buy Now</a>
+						<a href="#contact" class="button">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</header>
+
+<!-- ===========PRODUCTS=============== -->
+
+<section class="wrapper" id="products">
+	<div class="row">
+		<div class="col-2-3 center-block">
+			<header>
+				<h2>Products</h2>
+			</header>
+			<blockquote>
+				“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” 
+				<footer><a href="#">- Coffee Review</a></footer>
+			</blockquote>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-1-3">
+			<p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed.</p>
+		</div>
+		<div class="col-1-3">
+			<p>Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. </p>
+		</div>
+		<div class="col-1-3">
+			<p>We only ship whole bean, but will grind for you in-store per request.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-1-3 center-block">
+			<p >Learn <a href="http://www.howtobrew.com/" target="_blank">how to brew!</a></p>
+		</div>
+	</div>
+
+	<section class="row">
+		<div class="col-11-12 center-block">
+			<div class="row">
+				<figure class="col-1-4">
+						<img src="img/finch-blend.jpg" alt="Twin Finch House Blend">
+				</figure>
+				<div class="row col-1-2">
+				<header>
+					<h3>Finch House Blend</h3>
+				</header>
+				<p><span>Medium Roast</span><br/><span>Imported from Cajamarca &amp; Moyobamba Regions, Peru.</span><br/><span>complemented by flavors of dark chocolate, peanut and light pepper notes.</span><br/><span>Our house blend was rated a 98 by <a href="http://www.coffeereview.com/" target="_blank">coffeereview.com!</a></span></p>
+				</div>
+				<div class="col-2-9">
+					<p>$17.95</p>
+					<a href="#" class="button">Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="col-11-12 center-block">
+			<div class="row">
+				<figure class="col-1-4">
+						<img src="img/evening-oak.jpg" alt="">
+				</figure>
+				<div class="col-1-2">
+				<header>
+					<h3>Evening Oak</h3>
+					</header>
+					<p><span>Medium-Dark Roast</span><br/><span>Imported from Eastern Java, Indonesia.</span><br/><span>Our feature roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</span></p>
+				</div>
+				<div class="col-2-9">
+					<p>$19.95</p>
+					<a href="#" class="button">Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="row">
+		<section class="col-1-3">
+			<figure class="m-bt-neg">
+				<img src="img/sunrise.jpg" alt="">
+			</figure>
+			<header>
+				<h4>Sunrise</h4>
+			</header>
+			<p><span>Light Roast</span><br/><span>Imported from La Chiapas, Mexico</span><br/><span>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</span></p>
+			<p>$17.95</p>
+			<a href="#" class="button">Buy Now</a>
+		</section>
+
+		<section class="col-1-3">
+			<figure class="m-bt-neg">
+				<img src="img/midnight.jpg" alt="">
+			</figure>
+			<header>
+				<h4>Midnight</h4>
+			</header>
+			<p><span>Dark Roast</span><br/><span>Imported from Latin America</span><br/><span>Roasted into a second crack for a big, bold and dark cup. Beans display oil.</span></p>
+			<p>$17.95</p>
+			<a href="#" class="button">Buy Now</a>
+		</section>
+
+		<section class="col-1-3">
+			<figure class="m-bt-neg">
+				<img src="img/esspresso.jpg" alt="">
+			</figure>
+			<header>
+				<h4>Espresso</h4>
+			</header>
+			<p><span>Dark Roast</span><br/><span>Imported from Latin America, Africa, Indonesia </span><br/><span>Clean, a little roasty, sumptuous crema, unfussy and delicious.</span></p>
+			<p>$19.95</p>
+			<a href="#" class="button">Buy Now</a>
+		</section>
+	</div>
+</section>
+
+<!-- ===========ABOUT OUR ROASTING=============== -->
+
+<section class="wrapper" id="about">
+	<div class="row">
+		<div class="col-1 center-block">
+			<header>
+				<h2>Our Roasting Process</h2>
+			</header>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1-2 center-block">
+			<p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated.</p>
+			<p> Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
+			<div class="row">
+				<div class="col-3-4 center-block">
+					<a href="#products" class="button">Buy Now</a>
+					<a href="#contact" class="button">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ===========SUBSCRIBE=============== -->
+
+<section class="wrapper" id="subscribe">
+	<div class="row">
+		<header class="col-1-3">
+			<h2>Subscribe</h2>
+			<p>Subscribe to our e-news letter!</p>
+		</header>
+		<form>
+			<div class="col-1-3">
+				<label for="fname">First Name</label>
+				<input  name="name" type="text" value="" placeholder="First Name" id="fname" />
+				<label for="semail">E-mail</label>
+				<input name="email" type="text" placeholder="Email" id="semail" />
+			</div>
+			
+			<div class="col-1-6" id="pad-top">
+				<a href="#" class="button">Subscribe</a>
+			</div>
+		</form>
+	</div>
+</section>
+
+<!-- ===========CONTACT US=============== -->
+
+<section class="wrapper" id="contact">
+	<div class="row">
+		<header class="col-3-8 center-block">
+			<h2>Contact Us</h2>
+			<ul>
+				<li><a href="https://www.facebook.com" class="facebook" target="_blank"><p>facebook</p></a></li>
+				<li><a href="https://www.twitter.com" class="twitter" target="_blank"><p>twitter</p></a></li>
+				<li><a href="https://plus.google.com" class="google" target="_blank"><p>google plus</p></a></li>
+			</ul>
+		</header>
+	</div>
+	<div class="row">
+		<div class="col-1-3">
+			<div id="map"></div>
+			<p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
+		</div>
+		<form class="col-1-3">
+			<label for="name">Name</label>
+			<input  name="name" type="text" value="" placeholder="Name" id="name" />
+			<label for="email">E-mail</label>
+			<input name="email" type="text" placeholder="Email" id="email" />
+			<label for="message">Your message:</label>
+			<textarea id="message" name="message" rows="7" placeholder="Message"></textarea>
+			<div class="col-1-3" id="submit">
+				<a href="#" class="button">Submit</a>
+			</div>
+		</form>
+	</div>
+</section>
+
+<footer class="wrapper">
+	<div class="row">
+		<div class="col-1-4">
+			<a href="#home"><img src="img/footer-logo.png" alt="Twin Finch"></a>
+		</div>
+		<ul class="col-1-12">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">Process</a></li>
+			<li><a href="#products">Products</a></li>
+			<li><a href="#subscribe">Subscribe</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#contact">Find Us</a></li>
+		</ul>
+		<div class="col-1-6">
+			<p>Connect With Us</p>
+			<ul>
+				<li><a href="https://www.facebook.com" class="facebook" target="_blank"><p>facebook</p></a></li>
+				<li><a href="https://www.twitter.com" class="twitter" target="_blank"><p>twitter</p></a></li>
+				<li><a href="https://plus.google.com" class="google" target="_blank"><p>google plus</p></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
